@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <title>Galeria Presentation</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="dados.js"></script>
+    <script type="text/javascript" src="lotes.json"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Presentation</h1>
+    </header>
+    <main>
+        <section class="galley-main">
+            <script>
+                //var c = parseInt(location.search.substring(7).split('&'));
+                var c = parseInt(location.search.slice(1).split("&")[0].split("=")[1]);
+                var q = parseInt(location.search.slice(1).split("&")[1].split("=")[1]);
+                var opcao = location.search.slice(1).split("&")[2].split("=")[1];
+                imagens(c,q,opcao);
+            </script>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>

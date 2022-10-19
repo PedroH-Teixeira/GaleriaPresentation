@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <script src="dados.js"></script>
+    <title>Galeria Presentation</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="login">Galeria Presentation</h2>
+        <form id="formulario" action="#">
+            <div class="input-field">
+                <input type="text" id="chapa" name="chapa" placeholder="Número da chapa">
+                <label for="chapa">Número do lote:</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="quant" name="quant" placeholder="Sequência">
+                <label for="quant">Quantidade:</label>
+            </div>
+            <div class="input-radio1">
+                <input type="radio" name="opcao" value="picstone" checked><p class="p-opcao">Picstone</p>
+            </div>
+            <div class="input-radio2">
+                <input type="radio" name="opcao" value="slabsmith"><p class="p-opcao">Slabsmith</p>
+            </div>
+            <div class="btn">
+                <button onclick="buscar()">Buscar</button>
+            </div>
+        </form>
+    </div>
+
+</body></html>
